@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#f5f5f5;}
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 30%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+button span:after {
+  content: '\00AB';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+ left: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  left: 10;
+</style>
+</head>
+<body>
+
+<h2>Payment Details</h2>
+
+<table>
+  <tr>
+  <th>Sl_no</th>
+    <th>Payment choice</th>
+    <th>Quantity</th>
+    <th>Total amount</th>
+  </tr>
+  <tr>
+  <th>1</th>
+    <td>UPI</td>
+    <td>5</td>
+    <td>100</td>
+  </tr>
+  <tr>
+  <th>2</th>
+    <td>UPI</td>
+    <td>6</td>
+    <td>150</td>
+  </tr>
+  <tr>
+  <th>3</th>
+    <td>CASH</td>
+    <td>2</td>
+    <td>30</td>
+  </tr>
+
+</table>
+<button class="button"><span>Go Back </span></button>
+</body>
+</html>
